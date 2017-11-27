@@ -55,6 +55,7 @@ a:active, a:visited, a:focus {
     height: inherit;
 }
 .header-top .header-col:nth-child(1) {
+    display: block;
     margin-right: 19px;
     background-color: #cd365a;
     opacity: 0.6;
@@ -64,7 +65,7 @@ a:active, a:visited, a:focus {
     top: -1px;
     width: 230px;
     height: 50px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid transparent;
     z-index: 131;
 }
@@ -144,9 +145,7 @@ a:active, a:visited, a:focus {
     display: block;
     float: left;
     margin-top: 10px;
-    margin-left: 10px;
-   
-   
+    margin-left: 10px;   
 }
 .header-col a {
     display: inline-block;
@@ -168,15 +167,14 @@ a:active, a:visited, a:focus {
     float:left;
 }
 .nav {
-    display: block;
+    display: inline-block;
     margin-top: 42px;
 }
 .header-nav {
     margin: 0 auto;
     display: block;
     width: 720px;
-    height: 135px;
-    float: left;
+    height: 135px;    
 }
 .nav-list a:link, a:active, a:visited, a:focus {
     text-decoration: none;
@@ -188,14 +186,16 @@ a:active, a:visited, a:focus {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
-  font-family: "Intro Regular";
-  color: rgb(91, 91, 91);
-   line-height: 1.667;
-  text-align: center;
+    font-family: "Intro Regular";
+    color: rgb(91, 91, 91);
+    line-height: 1.667;
+    text-align: center;
   
 }
-.nav-item img {
+.nav-item {
     display: inline-block;
+}
+.nav-item img {    
     margin-top: 20px;
     border-radius: 50%;
     background-image: -moz-linear-gradient( 60deg, rgb(27,189,206) 0%, rgb(33,208,226) 100%);
@@ -213,15 +213,3 @@ a:active, a:visited, a:focus {
     transition: 0.5s;
 }   
 
-.Максима_Life {
-  font-size: 12px;
-  font-family: "Intro Regular";
-  color: rgb(91, 91, 91);
-  text-transform: uppercase;
-  line-height: 1.667;
-  text-align: center;
-  position: absolute;
-  left: 896.953px;
-  top: 166.498px;
-  z-index: 80;
-}
