@@ -28,7 +28,7 @@ a:active, a:visited, a:focus {
 .header-top {
     margin-left: -30px;
     display: block;
-    width: 100vw;
+    width: 100%;
     background-image: -moz-linear-gradient( 0deg, rgba(189,48,82,0.6) , rgb(248,89,128) 100%);
     background-image: -webkit-linear-gradient( 0deg, rgba(189,48,82,0.6) , rgb(248,89,128) 100%);
     background-image: -ms-linear-gradient( 0deg, rgba(189,48,82,0.6), rgb(248,89,128) 100%);
@@ -131,11 +131,6 @@ a:active, a:visited, a:focus {
   text-align: center;
   line-height: 50px;
 }
-
-/*.header-top .header-col:nth-child(4) a:hover {
-    text-decoration: none;
-    border-bottom: 1px solid #fff;
-}*/
 .mod-callendar {
     display: block;
     float: left;
@@ -161,39 +156,46 @@ a:active, a:visited, a:focus {
     display: inline-block;
     float:left;
 }
-.nav {
-    display: block;
-    margin-top: 42px;
-}
 .header-nav {
     margin: 0 auto;
     display: inline-block;
     width: 720px;
     height: 135px;    
 }
+.nav {
+    display: block;
+    margin-top: 42px;
+    height: 93px; 
+}
+.nav-list {
+    height: 93px;
+}
 .nav-list a:link, a:active, a:visited, a:focus {
     text-decoration: none;
     outline: none;
 }
 .nav-list li {
-    display: block;
-    margin-left: 2rem;
+    display: inline-block;
+    margin-left: 1rem;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
-    font-family: "Intro Regular";
+    font-family: intro, Arial, sans-serif;
     color: rgb(91, 91, 91);
-    line-height: 130px;
+    height: inherit;
+    line-height: 93px;
     text-align: center;
-    position: relative;
-  
+    position: relative;  
+
 }
 .nav-item {
     position: relative;
-    display: inline-block;
+    display: inline-block;    
 }
-.nav-item img {    
-    margin-top: 20px;
+.nav-icon {
+    display: inline-block;
+    left: 0;
+    top: -63px;
     border-radius: 50%;
     background-image: -moz-linear-gradient( 60deg, rgb(27,189,206) 0%, rgb(33,208,226) 100%);
     background-image: -webkit-linear-gradient( 60deg, rgb(27,189,206) 0%, rgb(33,208,226) 100%);
@@ -201,17 +203,40 @@ a:active, a:visited, a:focus {
     position: absolute;
     width: 60px;
     height: 60px;
+    box-shadow: 0 5px 10px rgba(211,211,211,0.1);
 }
-
-.nav-item img:hover {
-    margin-top: -20px;
+.nav-icon:hover {
+    margin-top: -15px;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+    background-color: -moz-linear-gradient( 0deg, rgb(226,55,96) 0%, rgb(248,89,128) 100%); 
+    background-color: -webkit-linear-gradient( 0deg, rgb(226,55,96) 0%, rgb(248,89,128) 100%);
+    background-color: -ms-linear-gradient( 0deg, rgb(226,55,96) 0%, rgb(248,89,128) 100%);
 }   
-.nav-item-link {
-    display: block;
+.nav-link {
+    position: relative;
+    text-align:center;
+    line-height:135px;
+    height:inherit;
+    width:60px;
+    font-size:12px;
 }
+
+
+.nav-item a {
+    margin: 5px 15px;
+    text-align: center;
+    color: rgb(91, 91, 91);
+    font: intro, Arial, sans-serif;
+    text-decoration: none;
+
+}
+/*.nav-list:hover {
+ margin-top: -10%; смещает картинку левее, выравнивая ее по центру
+}
+*/
+
 .footer-bot {
     background: #ea446c;        
     position: absolute;
@@ -258,8 +283,7 @@ a:active, a:visited, a:focus {
     margin-left: 19px;
     float: left;
 }
-.social-links a {
-    
+.social-links a {    
     line-height: 2em;
     color: #fff;
     border: solid 1px #fff;
