@@ -86,8 +86,8 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
 });
 
-gulp.task('clear', function (callback) {
-	return cache.clearAll();
-})
+// gulp.task('clear', function (callback) {
+// 	return cache.clearAll();
+// })
 
 gulp.task('default', ['watch']);
