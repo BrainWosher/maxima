@@ -26,7 +26,7 @@ a:active, a:visited, a:focus {
     background-image: -ms-linear-gradient( 0deg, rgb(226,55,96) 0%, rgb(248,89,128) 100%);    
 }
 .header-top {
-    margin-left: -30px;
+    margin-left: -25px;
     display: block;
     width: 100%;
     background-image: -moz-linear-gradient( 0deg, rgba(189,48,82,0.6) , rgb(248,89,128) 100%);
@@ -40,12 +40,12 @@ a:active, a:visited, a:focus {
     top: 0px;      
     z-index: 129;
 }
-.header-wrapper {
+.header-wrapper {    
     position: absolute;
-    left: 20vw;
+    left: 20%;
     display: block;
     margin: 0 auto;    
-    min-width: 70%;
+    min-width: 978px;
     height: inherit;
 }
 .header-top .header-col:nth-child(1) {
@@ -305,6 +305,23 @@ a:active, a:visited, a:focus {
     border-radius: 50%;
     margin-left: 5px;
     margin-right: 5px;
+    font-size: 2em;
+    -webkit-transition: 0.2sec;
+    -o-transition: 0.2sec;
+    transition: 0.2sec;
+}
+.social-links img {    
+    line-height: 2em;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: : -webkit-linear-gradient(330deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
+    background-color: : -o-linear-gradient(330deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
+    background-color: : linear-gradient(60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
     font-size: 2em;
     -webkit-transition: 0.2sec;
     -o-transition: 0.2sec;
