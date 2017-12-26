@@ -197,7 +197,7 @@ a:active, a:visited, a:focus {
     left: 0;
     top: -63px;
     border-radius: 50%; /* Радиус скругления */
-    
+    color: #fff;
     background-image: -moz-linear-gradient( 60deg, rgb(27,189,206) 0%, rgb(33,208,226) 100%);
     background-image: -webkit-linear-gradient( 60deg, rgb(27,189,206) 0%, rgb(33,208,226) 100%);
     background-image: -ms-linear-gradient( 60deg, rgb(27,189,206) 0%, rgb(33,208,226) 100%);
@@ -206,28 +206,20 @@ a:active, a:visited, a:focus {
     height: 50px;
     
 }
+.card-icon {
+    background-image: url(app/img/svg/cards.svg);
+    border-radius: 50px;
+}
 .nav-icon:hover {
     margin-top: -15px;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;    
     background-image: -moz-linear-gradient( 60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
-  background-image: -webkit-linear-gradient( 60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
-  background-image: -ms-linear-gradient( 60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
+    background-image: -webkit-linear-gradient( 60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
+    background-image: -ms-linear-gradient( 60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
 }   
 
-.Ellipse_1_copy_5 {
-  border-radius: 50%;
-  background-image: -moz-linear-gradient( 60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
-  background-image: -webkit-linear-gradient( 60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
-  background-image: -ms-linear-gradient( 60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
-  position: absolute;
-  left: 612px;
-  top: 92px;
-  width: 60px;
-  height: 60px;
-  z-index: 85;
-}
 
 .nav-link {
     position: relative;
@@ -247,10 +239,6 @@ a:active, a:visited, a:focus {
     text-decoration: none;
 
 }
-/*.nav-list:hover {
- margin-top: -10%; смещает картинку левее, выравнивая ее по центру
-}
-*/
 
 .footer-bot {
     background: #ea446c;        
