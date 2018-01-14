@@ -195,21 +195,16 @@ a:active, a:visited, a:focus {
 .nav-icon {
     display: block;
     left: 0;
-    top: -63px;
-    border-radius: 50%; /* Радиус скругления */
-    color: #fff;
+    top: -4rem;
+    border-radius: 50%; /* Радиус скругления */    
     background-image: -moz-linear-gradient( 60deg, rgb(27,189,206) 0%, rgb(33,208,226) 100%);
     background-image: -webkit-linear-gradient( 60deg, rgb(27,189,206) 0%, rgb(33,208,226) 100%);
     background-image: -ms-linear-gradient( 60deg, rgb(27,189,206) 0%, rgb(33,208,226) 100%);
     position: absolute;
-    width: 50px;
-    height: 50px;
-    
+    width: 60px;
+    height: 60px;
 }
-.card-icon {
-    background-image: url(app/img/svg/cards.svg);
-    border-radius: 50px;
-}
+
 .nav-icon:hover {
     margin-top: -15px;
     -webkit-transition: 0.5s;
@@ -219,7 +214,6 @@ a:active, a:visited, a:focus {
     background-image: -webkit-linear-gradient( 60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
     background-image: -ms-linear-gradient( 60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
 }   
-
 
 .nav-link {
     position: relative;
