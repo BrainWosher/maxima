@@ -194,19 +194,51 @@ a:active, a:visited, a:focus {
 }
 .nav-icon {
     display: block;
-    left: 0;
-    top: -4rem;
-    border-radius: 50%; /* Радиус скругления */    
+    left: 1rem;
+    top: -5rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;    
     background-image: -moz-linear-gradient( 60deg, rgb(27,189,206) 0%, rgb(33,208,226) 100%);
     background-image: -webkit-linear-gradient( 60deg, rgb(27,189,206) 0%, rgb(33,208,226) 100%);
     background-image: -ms-linear-gradient( 60deg, rgb(27,189,206) 0%, rgb(33,208,226) 100%);
     position: absolute;
     width: 60px;
     height: 60px;
+
+}
+.nav-link:before {    
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 50px;
+    height: 10px;
+    margin-left: -25px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(top, #ebebeb 0%, #ddd 100%);
+    background: -moz-linear-gradient(top, #ebebeb 0%, #ddd 100%);
+    background: -o-linear-gradient(top, #ebebeb 0%, #ddd 100%);
+    background: -ms-linear-gradient(top, #ebebeb 0%, #ddd 100%);
+    background: linear-gradient(to bottom, #ebebeb 0%, #ddd 100%);
+    content: '';    
+}
+.nav-item a:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 101;
 }
 
 .nav-icon:hover {
-    margin-top: -15px;
+    margin-top: -20px;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;    
