@@ -190,7 +190,8 @@ a:active, a:visited, a:focus {
 }
 .nav-item {
     position: relative;
-    display: inline-block;    
+    display: inline-block;
+    left: 50%;    
 }
 .nav-icon {
     display: block;
@@ -252,7 +253,7 @@ a:active, a:visited, a:focus {
     text-align:center;
     line-height:135px;
     height:inherit;
-    /*width:60px;*/
+    width:60px;
     font-size:12px;
 }
 
