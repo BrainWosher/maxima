@@ -325,7 +325,7 @@ a:active, a:visited, a:focus {
     -o-transition: 0.2sec;
     transition: 0.2sec;
 }
-.social-links img {    
+.socialLinks img {    
     line-height: 2em;
     color: #fff;
     height: 50px;
@@ -334,27 +334,27 @@ a:active, a:visited, a:focus {
     border-radius: 50%;
     margin-left: 5px;
     margin-right: 5px;
-    background-color: : -webkit-linear-gradient(330deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
+    fill: rgb(226,56,97);
+   /* background-color: : -webkit-linear-gradient(330deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
     background-color: : -o-linear-gradient(330deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
     background-color: : linear-gradient(60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
-    font-size: 2em;
-    -webkit-transition: 0.2sec;
+   */ -webkit-transition: 0.2sec;
     -o-transition: 0.2sec;
     transition: 0.2sec;
 }
-.social-links .ikon-vk a:hover {
+.socialLinks__vk:hover {
     background-color: #507299;
 }
 
-.icon-youtube a:hover {
+.socialLinks__youtube:hover {
     background-color: #bb0000;
 }
-.icon-fb a:hover {
+.socialLinks__fb:hover {
     background-color: #3b5998;
 }
-.icon-ok a:hover {
+.socialLinks__ok a:hover {
     background-color: #f7b42c;
 }
-.icon-insta a:hover {
+.socialLinks__insta:hover {
     background-color: #517fa4;
 }
