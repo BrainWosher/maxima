@@ -147,6 +147,43 @@ a:active, a:visited, a:focus {
     font-family: "Intro Regular";   
     text-align: center;   
 }
+.header-wrapper .header-col:nth-child(1) {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 230px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    display: inline;    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-wrapper .header-col:nth-child(2) {
+    display: inline;
+    width: 728px;
+    height: 135px;
+    margin-left: 19px;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+}
+.header-wrapper::before {
+    display: table;
+    content: '';
+}
+.header-wrapper::after {
+    clear: both;
+    display: table;
+    content: '';
+}
 .header-logo {
     margin-top: 9px;
     margin-left: auto;
@@ -156,19 +193,22 @@ a:active, a:visited, a:focus {
     display: inline-block;
     float:left;
 }
-.header-nav {
+
+.nav {
+    width: 728px;
     margin: 0 auto;
     display: inline-block;
-    width: 720px;
-    height: 135px;    
-}
-.nav {
-    display: block;
     margin-top: 42px;
-    height: 93px; 
+    height: 93px;
+    font-family: _intro, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    position: absolute;
 }
 .nav-list {
     height: 93px;
+    display: inline-block;
 }
 .nav-list a:link, a:active, a:visited, a:focus {
     text-decoration: none;
@@ -208,7 +248,7 @@ a:active, a:visited, a:focus {
     height: 60px;
 
 }
-.nav-link:before {    
+.nav-link::before {    
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -228,7 +268,10 @@ a:active, a:visited, a:focus {
     background: linear-gradient(to bottom, #ebebeb 0%, #ddd 100%);
     content: '';    
 }
-.nav-item a:after {
+.nav-link:hover::before {
+    width: 40px;
+}
+.nav-item a::after {
     position: absolute;
     content: '';
     top: 0;
