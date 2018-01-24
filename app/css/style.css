@@ -154,8 +154,12 @@ a:active, a:visited, a:focus {
     box-sizing: border-box;
     width: 230px;
     margin: 0;
-    padding: 0;    
-    display: inline-block;    
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    display: inline;    
     position: absolute;
     top: 0;
     left: 0;
@@ -165,7 +169,7 @@ a:active, a:visited, a:focus {
     width: 728px;
     height: 135px;
     margin-left: 19px;
-    left: 230px;
+    left: 0;
     top: 0;
     display: inline-block;
     box-sizing: border-box;
@@ -193,16 +197,18 @@ a:active, a:visited, a:focus {
 .nav {
     width: 728px;
     margin: 0 auto;
-    display:block;
+    display: inline-block;
     margin-top: 42px;
-    height: 93px;    
+    height: 93px;
+    font-family: _intro, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
     position: absolute;
 }
 .nav-list {
     height: 93px;
-    display: block;
-    width: 728px;
-    position: absolute; 
+    display: inline-block;
 }
 .nav-list a:link, a:active, a:visited, a:focus {
     text-decoration: none;
@@ -210,16 +216,17 @@ a:active, a:visited, a:focus {
 }
 .nav-list li {
     display: inline-block;
-    /*margin-left: 1rem;
+    margin-left: 1rem;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
     font-family: intro, Arial, sans-serif;
     color: rgb(91, 91, 91);
     height: inherit;
+    line-height: 93px;
     text-align: center;
     position: relative;  
-*/
+
 }
 .nav-item {
     position: relative;
