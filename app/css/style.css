@@ -443,7 +443,7 @@ a:active, a:visited, a:focus {
     -o-transition: 0.2sec;
     transition: 0.2sec;
 }
-.socialLinks img {    
+.social-links img {    
     line-height: 2em;
     color: #fff;
     height: 44px;
@@ -452,23 +452,30 @@ a:active, a:visited, a:focus {
     border-radius: 50%;
     margin-left: 5px;
     margin-right: 5px;
+<<<<<<< HEAD
+=======
+    background-color: : -webkit-linear-gradient(330deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
+    background-color: : -o-linear-gradient(330deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
+    background-color: : linear-gradient(60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
+    font-size: 2em;
+>>>>>>> parent of d2abc36... added social icon svg
     -webkit-transition: 0.2sec;
     -o-transition: 0.2sec;
     transition: 0.2sec;
 }
-.socialLinks__vk:hover {
+.social-links .ikon-vk a:hover {
     background-color: #507299;
 }
 
-.socialLinks__youtube:hover {
+.icon-youtube a:hover {
     background-color: #bb0000;
 }
-.socialLinks__fb:hover {
+.icon-fb a:hover {
     background-color: #3b5998;
 }
-.socialLinks__ok a:hover {
+.icon-ok a:hover {
     background-color: #f7b42c;
 }
-.socialLinks__insta:hover {
+.icon-insta a:hover {
     background-color: #517fa4;
 }
