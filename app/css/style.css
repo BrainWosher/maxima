@@ -358,16 +358,19 @@ a:active, a:visited, a:focus {
     color: #fff;
     height: 44px;
     width: 44px;
-    border: solid 1px #fff;
+    /*border: solid 1px #fff;*/
     border-radius: 50%;
     margin-left: 5px;
     margin-right: 5px;
     -webkit-transition: 0.2sec;
     -o-transition: 0.2sec;
     transition: 0.2sec;
+    z-index: 151;
 }
 .socialLinks__vk:hover {
     background-color: #507299;
+    border: solid 1px #fff;
+    z-index: 150;
 }
 
 .socialLinks__youtube:hover {
@@ -376,7 +379,7 @@ a:active, a:visited, a:focus {
 .socialLinks__fb:hover {
     background-color: #3b5998;
 }
-.socialLinks__ok a:hover {
+.socialLinks__ok:hover {
     background-color: #f7b42c;
 }
 .socialLinks__insta:hover {
