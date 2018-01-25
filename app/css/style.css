@@ -228,6 +228,9 @@ a:active, a:visited, a:focus {
     background: linear-gradient(to bottom, #ebebeb 0%, #ddd 100%);
     content: '';    
 }
+.nav-link:hover::before {
+    width: 40px;
+}
 .nav-item a:after {
     position: absolute;
     content: '';
@@ -280,8 +283,7 @@ a:active, a:visited, a:focus {
     color: #fff;
 }
 
-.footer-wrapper {
-    box-sizing: border-box;   
+.footer-wrapper {     
     width: 978px;
     margin: 0 auto;
     height: inherit;
@@ -303,7 +305,7 @@ a:active, a:visited, a:focus {
     padding-bottom: 8px;
 }
 
-.footer__col-1 a:active, a:visited, a:focus {
+.footer-col:nth-child(1) a:active, a:visited, a:focus {
     text-decoration: none;
     outline: none;
 }
@@ -341,8 +343,7 @@ a:active, a:visited, a:focus {
     float: left;
 
 }
-.social-links a {    
-    
+.social-links a { 
     color: #fff;
     border: solid 1px #fff;
     border-radius: 50%;
@@ -358,10 +359,11 @@ a:active, a:visited, a:focus {
     color: #fff;
     height: 44px;
     width: 44px;
-    /*border: solid 1px #fff;*/
+    border: solid 1px rgb(226,56,97);
     border-radius: 50%;
     margin-left: 5px;
     margin-right: 5px;
+    background-color: rgb(226,56,97);
     -webkit-transition: 0.2sec;
     -o-transition: 0.2sec;
     transition: 0.2sec;
@@ -375,13 +377,17 @@ a:active, a:visited, a:focus {
 
 .socialLinks__youtube:hover {
     background-color: #bb0000;
+    border: solid 1px #fff;
 }
 .socialLinks__fb:hover {
     background-color: #3b5998;
+    border: solid 1px #fff;
 }
 .socialLinks__ok:hover {
     background-color: #f7b42c;
+    border: solid 1px #fff;
 }
 .socialLinks__insta:hover {
     background-color: #517fa4;
+    border: solid 1px #fff;
 }
