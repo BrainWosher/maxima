@@ -159,15 +159,19 @@ a:active, a:visited, a:focus {
 .header-nav {
     margin: 0 auto;
     display: inline-block;
-    width: 720px;
+    width: 728px;
     height: 135px;    
 }
 .nav {
+    position: absolute;
     display: block;
     margin-top: 42px;
     height: 93px; 
+    width: 728px;
+
 }
 .nav-list {
+    width: 728px;
     height: 93px;
 }
 .nav-list a:link, a:active, a:visited, a:focus {
@@ -191,7 +195,7 @@ a:active, a:visited, a:focus {
 .nav-item {
     position: relative;
     display: inline-block;
-    left: 50%;    
+    padding: 8px;    
 }
 .nav-icon {
     display: block;
@@ -219,7 +223,7 @@ a:active, a:visited, a:focus {
     left: 50%;
     width: 50px;
     height: 10px;
-    margin-left: -25px;
+    margin-left: -15px;
     border-radius: 50%;
     background: -webkit-linear-gradient(top, #ebebeb 0%, #ddd 100%);
     background: -moz-linear-gradient(top, #ebebeb 0%, #ddd 100%);
@@ -259,7 +263,9 @@ a:active, a:visited, a:focus {
     width:60px;
     font-size:12px;
 }
-
+.nav-link:hover {
+    color: #e34168
+}
 
 .nav-item a {
     margin: 5px 15px;
@@ -298,16 +304,31 @@ a:active, a:visited, a:focus {
     display: inline-block;
     position: relative;
     float: left;
-    box-sizing: border-box;
-    margin-bottom: 5px;
+    box-sizing: border-box;   
     font-family: _intro, Arial, sans-serif;
-    font-size: 18px;
     padding-bottom: 8px;
 }
-
-.footer-col:nth-child(1) a:active, a:visited, a:focus {
-    text-decoration: none;
-    outline: none;
+.footer_title{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.footerCol__location {
+    margin-top: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer_workTime {
+    margin-top: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+   
+}
+.footer_link /*a:active, a:visited, a:focus */{
+    /*text-decoration: none;
+    outline: none;*/
+    color: #fff;
 }
 .footer-col:nth-child(1) b {
     margin: 0;
