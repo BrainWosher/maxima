@@ -320,7 +320,102 @@ a:active, a:visited, a:focus {
     display: table;
     content: '';
 }
-.weight_title div {
+.box_blue_grad {
+    position: absolute;
+    display: block;
+    width: 978px;
+    height: 410px;
+    padding: 0;
+    margin: 0;
+    background-image: -webkit-linear-gradient(bottom, #21d0e2, #1bbad8);
+    background-image: -moz-linear-gradient(bottom, #21d0e2, #1bbad8);
+    background-image: -o-linear-gradient(bottom, #21d0e2, #1bbad8);
+    background-image: -ms-linear-gradient(bottom, #21d0e2, #1bbad8);
+    background-image: linear-gradient(to top, #21d0e2, #1bbad8);
+    color: #fff;
+}
+.weight_form {
+    padding: 50px;
+    display: block;
+    position: relative;
+    width: 878px;
+    height: 310px;
+
+}
+.weight_form table {
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: 254px;
+
+}
+.weight_inputs {
+    width: 726px;
+    height: 82px;
+}
+.weight_inputs td {
+    display: table-cell;
+    vertical-align: center;
+    padding-bottom: 34px;
+    text-align: right;
+    font-weight: normal;
+}
+.weight_form label:nth-child(1) {
+    display: block;
+    padding-top: 13px;
+    font-size: 18px;
+    color: #fff;
+    font-family: _intro, Arial, sans-serif;
+    text-align: right;
+}
+.weight_form label:nth-child(2) {
+    display: block;
+    padding-top: 13px;
+    font-size: 18px;
+    color: #fff;
+    font-family: _intro, Arial, sans-serif;
+    text-align: right;
+}
+.weight_form label:nth-child(3) {
+    display: block;
+    padding-top: 13px;
+    font-size: 18px;
+    color: #fff;
+    font-family: _intro, Arial, sans-serif;
+    text-align: right;
+}
+/*.weight_form label {
+    display: block;
+    padding-top: 13px;
+    color: #fff;
+    font-family: _intro, Arial, sans-serif;
+    font-size: 18px;
+    text-align: right;
+}*/
+/*.weight_inputs td + td {
+    padding-left: 14px;
+}*/
+/*.weight_form .weight_inputs input {
+    width: 80px;
+    height: 42px;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+    -webkit-box-shadow: 0 0 0 1px #0d9bbd inset;
+    box-shadow: 0 0 0 1px #0d9bbd inset;
+    background: #12a9c4;
+    margin-top: 6px;
+    margin-bottom: 0;
+    color: #fff;
+}*/
+.weight_form_submit {
+    text-align: center;
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0 auto;    
+}
+/*.weight_title div {
      border-radius: 3px;
      display: block;
      background-color: rgb(23, 173, 210);
@@ -328,7 +423,7 @@ a:active, a:visited, a:focus {
      width: 978px;
      height: 396px;
      z-index: 79;
-}
+}*/
 .footer-bot {
     background: #ea446c;        
     position: absolute;
