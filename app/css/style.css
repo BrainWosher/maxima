@@ -42,7 +42,6 @@ a:active, a:visited, a:focus {
 }
 .header-wrapper {    
     position: relative;
-   /* left: 20%;*/
     display: block;
     margin: 0 auto;    
     width: 978px;
@@ -117,6 +116,7 @@ a:active, a:visited, a:focus {
     text-decoration: none;
     text-align: center;
     margin-left: 1rem;
+    z-index: 133;
 }
 .header-top .header-col a:hover {
     text-decoration: none;
@@ -366,6 +366,7 @@ a:active, a:visited, a:focus {
     color: #fff;
     font-family: _intro, Arial, sans-serif;
     font-size: 18px;
+    padding-right: 14px;
     text-align: right;
 }
 .weight_inputs-label2 {
@@ -373,6 +374,8 @@ a:active, a:visited, a:focus {
     padding-top: 13px;
     font-size: 18px;
     color: #fff;
+    margin-left: 30px;
+    padding-right: 14px;
     font-family: _intro, Arial, sans-serif;
     text-align: right;
 }
@@ -381,9 +384,30 @@ a:active, a:visited, a:focus {
     padding-top: 13px;
     font-size: 18px;
     color: #fff;
+    margin-left: 30px;
+    padding-right: 14px;
     font-family: _intro, Arial, sans-serif;
     text-align: right;
 }
+.weight_inputs-label4 {
+    display: block;   
+    padding-top: 13px;
+    color: #fff;
+    font-family: _intro, Arial, sans-serif;
+    font-size: 18px;
+    padding-right: 14px;
+    text-align: right;
+}
+.weight_inputs-label5 {
+    display: block;   
+    padding-top: 13px;
+    color: #fff;
+    font-family: _intro, Arial, sans-serif;
+    font-size: 18px;
+    padding-right: 14px;
+    text-align: right;
+}
+
 /*.weight_form label:nth-child(2) {
     display: inline-block;
     padding-top: 13px;
@@ -400,20 +424,101 @@ a:active, a:visited, a:focus {
     font-family: _intro, Arial, sans-serif;
     text-align: right;
 }*/
-.weight_inputs input {
+.weight_form .weight_inputs input {
     width: 80px;
     height: 42px;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+}
+.weight_form input {
     -webkit-box-shadow: 0 0 0 1px #0d9bbd inset;
     box-shadow: 0 0 0 1px #0d9bbd inset;
     background: #12a9c4;
+    margin-top: 6px;
+    margin-bottom: 0;
+    color: #fff;
+}
+ input {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin-top: 6px;
+    border-radius: 2px;
     display: inline-block;
-    margin-bottom: 0;
+    border: 0;
     padding: 8px 16px;
+    font-size: 16px;
+}
+.weight_form .radios {
+    margin-left: 0;
+}
+.radios {
+    position: relative;
+    margin: 6px;
+    display: table;
+}
+.radios::before {    
+    border-radius: 40px;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    border: 2px solid #17add2;
+    content: '';
+
+}
+button input[type='checkbox'], button input[type='radio'] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 0;
+    visibility: hidden;
+}
+button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 28px;
+    border: 2px solid #41edff;
+    border-radius: 50px;
+    background: #1bbbd9;
     color: #fff;
+    font-family: _intro, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+/*
+button:active {
+    background: #41edff;
+}*/
+.is-checked {
+    color: #21d0e2;
+    border-color: #fff;
+    background: #fff;
+}
+button:hover {
+    border-color: #41edff;
+    background: #41edff;
+}
+.is-checked:hover {
+    color: #21d0e2;
+    border-color: #fff;
+    background: #fff;
 }
 .weight_form_submit {
     text-align: center;
@@ -450,7 +555,9 @@ a:active, a:visited, a:focus {
     -ms-user-select: none;
     user-select: none;
 }
-
+.weight_form_submit button:hover {
+    background: #41edff;
+}
 .footer-bot {
     background: #ea446c;        
     position: absolute;
